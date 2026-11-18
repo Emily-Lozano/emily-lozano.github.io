@@ -1,0 +1,6 @@
+# Files Windows and Google Drive create on their own
+desktop.ini
+Thumbs.db
+*.tmp
+~$*
+.DS_Store

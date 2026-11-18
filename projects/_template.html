@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+  HOW TO ADD A PROJECT
+  1. Copy this file in the same folder and rename it, for example "solar-car.html".
+     The name without ".html" is the project's slug.
+  2. Change data-project="REPLACE-WITH-SLUG" below to that slug.
+  3. Add an entry to the projects list in assets/js/data.js with the same slug,
+     plus title, org (optional), start, end and a one-line summary.
+     The title, dates and organization at the top of this page come from there.
+  4. Write about the project inside <article class="project-body">. Use any HTML:
+     paragraphs, lists, images, links.
+  5. Delete this comment from your copy.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project · Emily Lozano</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/data.js" defer></script>
+    <script src="../assets/js/site.js" defer></script>
+  </head>
+  <body data-page="projects" data-base="../" data-project="REPLACE-WITH-SLUG">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+
+    <main id="main" class="wrap">
+      <div class="project-header" id="project-header"></div>
+
+      <article class="project-body">
+        <h2>Overview</h2>
+        <p>What the project is and why you did it.</p>
+
+        <h2>What I did</h2>
+        <ul>
+          <li>Your role and contributions.</li>
+          <li>Tools, parts or software you used.</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Results, what you learned, links to code or demos.</p>
+
+        <!-- Image example: put the file in assets/img/ first.
+        <figure>
+          <img src="../assets/img/your-image.jpg" alt="Describe the image" />
+          <figcaption>Short caption.</figcaption>
+        </figure>
+        -->
+      </article>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

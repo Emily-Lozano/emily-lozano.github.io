@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emily Lozano</title>
+    <meta name="description" content="Emily Lozano: Electrical Engineering student at Stony Brook University. About me, projects and experience." />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <!-- data-page marks the active nav link; data-base is the path back to the site root ("" here). -->
+  <body data-page="home" data-base="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+
+    <main id="main" class="wrap">
+      <!-- Name, tagline, bio, photo and socials all come from assets/js/data.js -->
+      <section class="profile" aria-labelledby="profile-name">
+        <div class="photo" id="profile-photo"></div>
+        <div>
+          <h1 id="profile-name">Emily Lozano</h1>
+          <p class="tagline" id="profile-tagline"></p>
+          <div id="profile-socials"></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About me</h2>
+        <div id="bio"></div>
+      </section>
+
+      <section aria-labelledby="recent-heading">
+        <h2 id="recent-heading">Recent projects</h2>
+        <ol class="card-list" id="recent-projects"></ol>
+        <a class="more-link" href="projects/index.html">All projects →</a>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>
