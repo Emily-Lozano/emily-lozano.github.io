@@ -198,8 +198,19 @@
     });
   }
 
+  // Gallery pictures open full size in a new tab when clicked.
+  function linkGalleryImages() {
+    Array.prototype.forEach.call(document.querySelectorAll(".gallery img"), function (img) {
+      if (img.parentNode.tagName === "A") return;
+      var a = el("a", { href: img.getAttribute("src"), target: "_blank", rel: "noopener", title: "Open full size" });
+      img.parentNode.insertBefore(a, img);
+      a.appendChild(img);
+    });
+  }
+
   buildHeader();
   buildFooter();
+  linkGalleryImages();
   fillHome();
   fillProjectList();
   fillProjectPage();

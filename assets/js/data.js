@@ -33,21 +33,20 @@ window.SITE = {
     {
       slug: "retro-game",
       title: "RetroGame: hand-tracked Tetris",
-      org: "", // TODO: hackathon, class or club, if it was for one
+      org: "", // TODO: name of the outside program it was for
       start: "2026-04",
       end: "2026-04",
-      summary: "A browser Tetris you play with hand gestures through your webcam, against an AI opponent, with a micro:bit for pausing and sound effects.",
+      summary: "A browser Tetris you play with hand gestures through your webcam, against an AI opponent, with a micro:bit for pausing and sound effects. Built solo.",
       links: [{ label: "Code on GitHub", url: "https://github.com/Emily-Lozano/RetroGame" }],
     },
     {
-      slug: "frc-2025-reefscape",
-      title: "FRC 2025 Reefscape robot design",
+      slug: "cad-projects",
+      title: "CAD projects in Onshape",
       org: "FRC robotics team, Bronx High School of Science",
-      start: "2025-01",
+      start: "2025", // TODO: the year you started CAD; the earlier projects may be from before 2025
       end: "2025",
-      summary: "Early KrayonCAD design of our 2025 robot: a three-stage cascade elevator, a coral reorienting mechanism and two game-piece intakes.",
-      image: "assets/img/frc-2025-krayoncad-1.png",
-      imageAlt: "Preliminary KrayonCAD model of the 2025 robot design",
+      summary: "Seven Onshape projects: the 2025 Reefscape robot design, a gearbox from scratch, a drivetrain, an assembly simulation, FeatureScripts, a full robot assembly and a cadathon cascade elevator.",
+      image: "assets/img/cad/full-robot-assembly.png",
     },
   ],
 
