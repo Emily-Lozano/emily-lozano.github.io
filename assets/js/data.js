@@ -13,16 +13,15 @@ window.SITE = {
   // Leave it empty to show your initials instead.
   photo: "",
 
-  // About Me: one string per paragraph. Lines marked TODO are placeholders to replace.
+  // About Me: one string per paragraph. Add more paragraphs as new strings.
   bio: [
     "I'm an Electrical Engineering student at Stony Brook University and a Simons STEM Scholar.",
-    "TODO: add a few sentences about what you're interested in, what you're working on, and what you want to do next.",
   ],
 
   socials: [
     { label: "GitHub", url: "https://github.com/Emily-Lozano" },
-    { label: "LinkedIn", url: "" }, // TODO: paste your LinkedIn profile URL
-    { label: "Email", url: "" }, // TODO: for example "mailto:you@example.com"
+    { label: "LinkedIn", url: "" }, // add your profile URL to show this link
+    { label: "Email", url: "" }, // e.g. "mailto:you@example.com" to show this link
   ],
 
   // Projects: each one needs its own page at projects/<slug>.html (copy projects/_template.html).
@@ -57,20 +56,18 @@ window.SITE = {
       org: "Stony Brook University",
       start: "2026-08",
       end: "present",
-      description: "TODO: add coursework, labs or highlights you want to mention.",
     },
     {
       role: "Simons STEM Scholar",
       org: "Simons STEM Scholars Honors Program, Stony Brook University",
       start: "2026",
       end: "present",
-      description: "TODO: describe the program and what you do in it.",
     },
     {
       role: "Construction member",
       org: "SciBorgs (FRC Team 1155), Bronx High School of Science",
       start: "2022",
-      end: "2025", // TODO: change if you stayed on the team past the 2025 season
+      end: "2025", // change if you stayed on the team past the 2025 season
       description: "Built with the team for the FIRST Robotics Competition, learned CAD in Onshape, and contributed to the 2025 Reefscape robot design.",
       links: [{ label: "See my CAD projects", url: "projects/cad-projects.html" }],
     },
