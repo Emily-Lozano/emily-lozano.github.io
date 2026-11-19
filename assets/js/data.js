@@ -33,7 +33,7 @@ window.SITE = {
     {
       slug: "retro-game",
       title: "RetroGame: hand-tracked Tetris",
-      org: "", // TODO: name of the outside program it was for
+      org: "Emerging Leaders in Technology (ELiTE), Columbia University",
       start: "2026-04",
       end: "2026-04",
       summary: "A browser Tetris you play with hand gestures through your webcam, against an AI opponent, with a micro:bit for pausing and sound effects. Built solo.",
