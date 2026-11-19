@@ -25,3 +25,5 @@ Lists sort themselves: ongoing items first, then newest to oldest. Dates are `"Y
 
 ## Publish
 In VS Code's Source Control panel, write a message, click **Commit**, then **Sync Changes** (push). GitHub Pages updates the live site within about a minute.
+
+Browsers keep old copies of the site's files for up to 10 minutes. If you don't see your change, press **Ctrl+F5** to reload the page fresh.
