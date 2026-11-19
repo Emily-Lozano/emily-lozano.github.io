@@ -194,6 +194,10 @@
         el("h3", { text: x.role }),
         el("p", { class: "meta", text: meta(x) }),
         x.description ? el("p", { class: isTodo(x.description) ? "todo" : null, text: x.description }) : null,
+        x.links && x.links.length ? linkButtons(x.links.map(function (l) {
+          // Links inside the site are written from the site root; add the page's base path.
+          return { label: l.label, url: /^(https?:|mailto:|\/)/.test(l.url) ? l.url : base + l.url };
+        })) : null,
       ]));
     });
   }

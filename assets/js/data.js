@@ -42,8 +42,8 @@ window.SITE = {
     {
       slug: "cad-projects",
       title: "CAD projects in Onshape",
-      org: "FRC robotics team, Bronx High School of Science",
-      start: "2025", // TODO: the year you started CAD; the earlier projects may be from before 2025
+      org: "SciBorgs (FRC Team 1155), Bronx High School of Science",
+      start: "2022",
       end: "2025",
       summary: "Seven Onshape projects: the 2025 Reefscape robot design, a gearbox from scratch, a drivetrain, an assembly simulation, FeatureScripts, a full robot assembly and a cadathon cascade elevator.",
       image: "assets/img/cad/full-robot-assembly.png",
@@ -65,6 +65,14 @@ window.SITE = {
       start: "2026",
       end: "present",
       description: "TODO: describe the program and what you do in it.",
+    },
+    {
+      role: "Construction member",
+      org: "SciBorgs (FRC Team 1155), Bronx High School of Science",
+      start: "2022",
+      end: "2025", // TODO: change if you stayed on the team past the 2025 season
+      description: "Built with the team for the FIRST Robotics Competition, learned CAD in Onshape, and contributed to the 2025 Reefscape robot design.",
+      links: [{ label: "See my CAD projects", url: "projects/cad-projects.html" }],
     },
   ],
 };
