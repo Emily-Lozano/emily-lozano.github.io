@@ -27,7 +27,18 @@ window.SITE = {
 
   // Projects: each one needs its own page at projects/<slug>.html (copy projects/_template.html).
   // org is optional: the club, team, company, class or lab the project was for.
+  // image is optional: a picture in assets/img/ shown on the project's card in the list.
+  // links is optional: buttons shown under the title on the project's page.
   projects: [
+    {
+      slug: "retro-game",
+      title: "RetroGame: hand-tracked Tetris",
+      org: "", // TODO: hackathon, class or club, if it was for one
+      start: "2026-04",
+      end: "2026-04",
+      summary: "A browser Tetris you play with hand gestures through your webcam, against an AI opponent, with a micro:bit for pausing and sound effects.",
+      links: [{ label: "Code on GitHub", url: "https://github.com/Emily-Lozano/RetroGame" }],
+    },
     {
       slug: "frc-2025-reefscape",
       title: "FRC 2025 Reefscape robot design",
@@ -35,6 +46,8 @@ window.SITE = {
       start: "2025-01",
       end: "2025",
       summary: "Early KrayonCAD design of our 2025 robot: a three-stage cascade elevator, a coral reorienting mechanism and two game-piece intakes.",
+      image: "assets/img/frc-2025-krayoncad-1.png",
+      imageAlt: "Preliminary KrayonCAD model of the 2025 robot design",
     },
   ],
 

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RetroGame: hand-tracked Tetris · Emily Lozano</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/data.js" defer></script>
+    <script src="../assets/js/site.js" defer></script>
+  </head>
+  <body data-page="projects" data-base="../" data-project="retro-game">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+
+    <main id="main" class="wrap">
+      <div class="project-header" id="project-header"></div>
+
+      <article class="project-body">
+        <h2>Overview</h2>
+        <p>
+          RetroGame is a head-to-head Tetris that runs in the browser. You play against an AI opponent, and instead of a
+          keyboard you control your pieces with your hand in front of a webcam. A BBC micro:bit adds physical controls and
+          sound: shake it to pause, and it beeps when you clear a row, win, lose or reach a new theme.
+        </p>
+
+        <h2>How it works</h2>
+        <ul>
+          <li>
+            <strong>Hand tracking:</strong> MediaPipe Hands follows your hand through the camera. Rotating your fingers
+            rotates the piece, moving your hand left or right shifts it, pushing down speeds it up, and a quick downward
+            flick drops it. The keyboard works as a fallback.
+          </li>
+          <li>
+            <strong>AI opponent:</strong> it scores every possible placement by stack height, lines cleared, holes and
+            bumpiness, then moves its piece step by step so you can watch it play. Beginner, Intermediate and Expert levels
+            change how fast pieces fall.
+          </li>
+          <li>
+            <strong>micro:bit:</strong> a MicroPython program on the micro:bit talks to the game over USB using the
+            browser's Web Serial API.
+          </li>
+          <li>
+            <strong>Rounds and music:</strong> each round switches between five visual themes (classic, neon, forest,
+            sunset and mono), with music for every level and the main menu.
+          </li>
+        </ul>
+
+        <h2>Built with</h2>
+        <p>HTML, CSS and JavaScript; MediaPipe Hands; the Web Serial API; MicroPython on a micro:bit v2.</p>
+
+        <p class="todo">TODO: add what it was for (a hackathon, class or club?), who you built it with, what you learned, and a screenshot or short demo video.</p>
+      </article>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

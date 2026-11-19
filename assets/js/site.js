@@ -114,11 +114,28 @@
 
   // ---------- page fillers ----------
   function projectCard(p) {
-    return el("li", { class: "card" }, [
+    var text = el("div", { class: "card-text" }, [
       el("h3", null, [el("a", { href: projectUrl(p), text: p.title })]),
       el("p", { class: "meta", text: meta(p) }),
       p.summary ? el("p", { text: p.summary }) : null,
     ]);
+    if (!p.image) return el("li", { class: "card" }, [text]);
+    var thumb = el("a", { class: "card-thumb", href: projectUrl(p), tabindex: "-1", "aria-hidden": "true" }, [
+      el("img", { src: base + p.image, alt: "", loading: "lazy" }),
+    ]);
+    return el("li", { class: "card has-thumb" }, [thumb, text]);
+  }
+
+  function linkButtons(links) {
+    return el("ul", { class: "social-buttons project-links" }, links.map(function (l) {
+      var external = /^https?:/.test(l.url);
+      return el("li", null, [el("a", {
+        href: l.url,
+        text: l.label,
+        target: external ? "_blank" : null,
+        rel: external ? "noopener" : null,
+      })]);
+    }));
   }
 
   function fillHome() {
@@ -166,6 +183,7 @@
     head.appendChild(el("p", { class: "back" }, [el("a", { href: base + "projects/index.html", text: "← All projects" })]));
     head.appendChild(el("h1", { text: p.title }));
     head.appendChild(el("p", { class: "meta", text: meta(p) }));
+    if (p.links && p.links.length) head.appendChild(linkButtons(p.links));
   }
 
   function fillExperience() {
